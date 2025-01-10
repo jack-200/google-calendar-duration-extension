@@ -1,0 +1,16 @@
+{
+    "manifest_version": 3,
+    "name": "Google Calendar Duration Extension",
+    "version": "1.0",
+    "description": "Shows the duration of events in Google Calendar.",
+    "permissions": [
+      "activeTab",
+      "scripting"
+    ],
+    "content_scripts": [
+      {
+        "matches": ["https://calendar.google.com/*"],
+        "js": ["content.js"]
+      }
+    ]
+}
